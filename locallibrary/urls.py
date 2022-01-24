@@ -28,9 +28,10 @@ urlpatterns += [
     path('catalog/', include('catalog.urls')),
 ]
 
-urlpatterns += [
-    path('', RedirectView.as_view(url='/catalog/', permanent=True)),
-]
+# Ver para que se utiliza esto de abajo
+# urlpatterns += [
+#     path('', RedirectView.as_view(url='/catalog/', permanent=True)),
+# ]
 
 # Use static() to add url mapping to serve static files during development (only)
 
